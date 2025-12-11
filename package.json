@@ -1,12 +1,31 @@
 {
   "name": "first-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Telegram bot for learning Java powered by Gemini AI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push"
   },
-  "keywords": [],
+  "keywords": [
+    "java",
+    "telegram",
+    "bot",
+    "gemini",
+    "ai"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "5.10.0",
+    "dotenv": "^17.2.3",
+    "pg": "^8.16.3",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "prisma": "5.10.0"
+  }
 }
